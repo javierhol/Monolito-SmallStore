@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_turnos.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Turnos Small Store</title>
+    <script type="text/javascript">
+        const cambiar1 = (numero) => {
+            body = document.querySelector("body")
+            body.style.backgroundImage =
+                `url(https://www.laprensa.hn/binrepository/tienda-ropa_383503_20211027094839.jpg)`;
+        }
+        const cambiar2 = (numero) => {
+            body = document.querySelector("body")
+            body.style.backgroundImage =
+                `url(https://media.timeout.com/images/105182190/750/422/image.jpg)`;
+        }
+    </script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="rueda">
+            <p id="updates"></p>
+        </div>
+        <div class="active">
+            <p>Turnos activos</p>
+        </div>
+        <div class="barra">
+            <p>Turno actual</p>
+            <p class="text-center" id="cambiar">---</p>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-botones">
+                
+                <button class="boton oscuro" id="button" type="button" onclick="turno()"><span>Siguiente</span></button>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-img">
+                <button type="button" onclick="cambiar1(1)" class="boton tema"><span>Claro</span></button>
+                <button type="button" onclick="cambiar2(2)" class="boton tema"><span>Oscuro</span></button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    let cont = 1;
+    function turno() {
+        document.getElementById("cambiar").innerHTML = cont++;
+    }
+    setInterval(() => {
+        fetch('http://localhost:3000/update')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("updates").innerHTML = data;
+            });
+    }, 500)
+</script>

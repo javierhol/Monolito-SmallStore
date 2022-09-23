@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #02101e;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 1rem;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding: 1rem;
+}
+header a {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+}
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.carrusel {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.carrusel article {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+}
+.carrusel article:nth-child(2) {
+    background-color:#45515094 ;
+}
+.carrusel article:nth-child(1):hover,
+.carrusel article:nth-child(3):hover {
+    background-color: #f370402c;
+}
+.carrusel div {
+    text-align: center;
+}
+.carrusel i {
+    font-size: 4rem;
+}
+.main-img {
+    width: 100%;
+    max-height: auto;
+ 
+}
+@media screen and (min-width:600px) {
+    .carrusel {
+        display: flex;
+    }
+}
+@media screen and (min-width:900px) {
+    header {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    .carrusel article {
+        margin-top: 4rem;
+        height: 400px;
+    }
+    .contain-container {
+        width: 60%;
+    }
+    .img-container {
+        width: 40%;
+    }
+    
+}

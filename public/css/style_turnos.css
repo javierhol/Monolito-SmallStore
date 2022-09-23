@@ -1,0 +1,230 @@
+body{
+    background-image: url(../img/ropa.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.time{
+    border:7px solid black;
+    border-radius:10px ;
+}
+
+.circulo{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    width:600px;
+    height:600px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background:rgba(103, 103, 109, 0.748);
+    float: right;
+    font-size: 60px;
+    color: #fff;
+    flex-direction: column;
+    margin:120px;
+}
+
+.circulo p{
+    font-size: 200px;
+}
+
+.turno{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:650px;
+    width:1000px; 
+    font-size: 200px;
+    color: #fff;
+}
+
+.turno p{
+    right:200px;
+    font-size: 148px;
+}
+
+.barra{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+    width:900px;
+   flex-direction: column;
+   font-size:35px;
+   margin-left: 60px;
+   background-color: rgba(103, 103, 109, 0.748);
+   color:white;
+}
+
+.barra p{
+    font-size:100px;
+} 
+
+/* ESTILOS adminTurnos */
+
+.rueda{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    width:600px;
+    height:600px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background:rgba(103, 103, 109, 0.748);
+    float: right;
+    font-size: 60px;
+    color: #fff;
+    flex-direction: column;
+    margin:120px;
+}
+
+.rueda p{
+    font-size: 200px;
+}
+
+.active{
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 278px;
+    width:1000px; 
+    font-size: 200px;
+    color: #fff;
+}
+
+.active p{
+    bottom:200px;
+    right:200px;
+    font-size: 148px;
+}
+
+/* ESTILOS BOTON FONDO */
+
+div {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-text {
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS BOTONES */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding:  0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 58px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	color: #141414;
+	border: 5px solid #141414;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #484545;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+#button{
+    margin: -8rem 5rem 0rem 1rem;
+    display: inline-block;
+    
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton.oscuro::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 80%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+
+.boton.oscuro:hover::after {
+	transform: scale(400);
+	background: #d7a36e;
+} 
+
+/* ESTILOS BOTONES TEMA */
+.boton.tema::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+
+.boton.tema:hover::after {
+	transform: scale(400);
+	background: #d7a36e;
+} 
+
+.contenedor-img {
+	width: 70%;
+	display: flex;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}

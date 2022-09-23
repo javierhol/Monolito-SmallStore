@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Small Store</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="/registro" method="post" class="formulario">
+        <h1>Registrate</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input name="name" type="text" placeholder="Nombre">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input name="email" type="email" placeholder="Correo Electronico">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input name="password" type="password" placeholder="Contraseña">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input name="number2" type="number" placeholder="Pin">
+            </div>
+            <input type="submit" value="Registrate" class="button">
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <p>¿Ya tienes una cuenta?<a class="link" href="/login">Iniciar Sesion</a></p>
+        </div>
+    </form>
+</body>
+</html>
